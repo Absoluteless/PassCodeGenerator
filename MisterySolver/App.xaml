@@ -1,0 +1,14 @@
+﻿<Application x:Class="MisterySolver.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MisterySolver"
+             StartupUri="MainWindow.xaml">
+
+	<Application.Resources>
+		<local:MainWindowViewModel x:Key="MainWindowViewModel" />
+		<Style TargetType="{x:Type Window}" x:Key="WindowStyle">
+			<Setter Property="FontSize" Value="14" />
+		</Style>
+	</Application.Resources>
+	
+</Application>
