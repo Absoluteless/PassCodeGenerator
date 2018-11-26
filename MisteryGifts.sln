@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassCodeGenerator", "PassCodeGenerator\PassCodeGenerator.csproj", "{CB9C71E6-FF66-4891-A71C-762E1E3AD285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MisteryCore", "Personalities\MisteryCore.csproj", "{16363EC8-74F0-4844-899B-4F9D78BA4885}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassCodeTests", "PassCodeTests\PassCodeTests.csproj", "{E1BACDF7-F736-4CEB-8647-52473358F77B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MisterySolver", "MisterySolver\MisterySolver.csproj", "{3055939F-7A57-453F-ABB8-5B5DB09353A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MisteryCore", "MisteryCore\MisteryCore.csproj", "{410433D3-B472-444C-B4AF-36315CD89F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{CB9C71E6-FF66-4891-A71C-762E1E3AD285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB9C71E6-FF66-4891-A71C-762E1E3AD285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB9C71E6-FF66-4891-A71C-762E1E3AD285}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16363EC8-74F0-4844-899B-4F9D78BA4885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16363EC8-74F0-4844-899B-4F9D78BA4885}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16363EC8-74F0-4844-899B-4F9D78BA4885}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16363EC8-74F0-4844-899B-4F9D78BA4885}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E1BACDF7-F736-4CEB-8647-52473358F77B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E1BACDF7-F736-4CEB-8647-52473358F77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1BACDF7-F736-4CEB-8647-52473358F77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{3055939F-7A57-453F-ABB8-5B5DB09353A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3055939F-7A57-453F-ABB8-5B5DB09353A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3055939F-7A57-453F-ABB8-5B5DB09353A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410433D3-B472-444C-B4AF-36315CD89F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410433D3-B472-444C-B4AF-36315CD89F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410433D3-B472-444C-B4AF-36315CD89F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410433D3-B472-444C-B4AF-36315CD89F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

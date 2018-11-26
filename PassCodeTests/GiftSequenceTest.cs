@@ -3,7 +3,6 @@ using System.Linq;
 using MisteryCore;
 using NUnit.Framework;
 using PassCodeGenerator;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace PassCodeTests
 {

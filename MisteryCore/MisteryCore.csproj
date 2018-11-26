@@ -4,17 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB9C71E6-FF66-4891-A71C-762E1E3AD285}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>PassCodeGenerator</RootNamespace>
-    <AssemblyName>PassCodeGenerator</AssemblyName>
+    <ProjectGuid>{410433D3-B472-444C-B4AF-36315CD89F47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MisteryCore</RootNamespace>
+    <AssemblyName>MisteryCore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +24,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,20 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GiftSequenceGenerator.cs" />
-    <Compile Include="PassCodeGenerator.cs" />
-    <Compile Include="PassCodeWriter.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Cipherer.cs" />
+    <Compile Include="IDictionaryExtension.cs" />
+    <Compile Include="IRestriction.cs" />
+    <Compile Include="OneWayRestriction.cs" />
+    <Compile Include="Personality.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MisteryCore\MisteryCore.csproj">
-      <Project>{410433d3-b472-444c-b4af-36315cd89f47}</Project>
-      <Name>MisteryCore</Name>
-    </ProjectReference>
+    <Compile Include="RestrictionFiller.cs" />
+    <Compile Include="RandomHolder.cs" />
+    <Compile Include="Restrictions.cs" />
+    <Compile Include="TwoWayRestriction.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
