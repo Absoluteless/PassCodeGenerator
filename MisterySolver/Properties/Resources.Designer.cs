@@ -63,9 +63,19 @@ namespace MisterySolver.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChristmasImage {
+        internal static System.Drawing.Bitmap After {
             get {
-                object obj = ResourceManager.GetObject("ChristmasImage", resourceCulture);
+                object obj = ResourceManager.GetObject("After", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Before {
+            get {
+                object obj = ResourceManager.GetObject("Before", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

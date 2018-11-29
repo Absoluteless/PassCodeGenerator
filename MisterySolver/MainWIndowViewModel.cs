@@ -10,9 +10,9 @@ namespace MisterySolver
         public MainWindowViewModel()
         {
             _personalityWrapper = new PersonalityWrapper();
+            _personalityWrapper.SolvedChanged += RaisePropertiesChanged;
             _code = string.Empty;
-            OnCodeChanged();
-            SetImage();
+            RaisePropertiesChanged();
         }
 
         private string _code;
@@ -26,14 +26,13 @@ namespace MisterySolver
 
         public string Greeting => _personalityWrapper.GetGreeting();
 
-        public BitmapSource FromImage { get; private set; }
+        public BitmapSource Image { get; private set; }
 
         public string GiftTo => _personalityWrapper.GetTo();
 
         private void OnCodeChanged()
         {
             _personalityWrapper.SetPersonalities(_code);
-            RaisePropertiesChanged();
         }
 
         private void SetImage()
@@ -43,7 +42,7 @@ namespace MisterySolver
                 var bmp = _personalityWrapper.Image;
                 var width = bmp.Width;
                 var height = bmp.Height;
-                FromImage = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
+                Image = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
                     bmp.GetHbitmap(),
                     IntPtr.Zero,
                     System.Windows.Int32Rect.Empty,
@@ -51,15 +50,16 @@ namespace MisterySolver
             }
             else
             {
-                FromImage = null;
+                Image = null;
             }
         }
 
         private void RaisePropertiesChanged()
         {
+            SetImage();
             RaisePropertyChanged(nameof(Greeting));
             RaisePropertyChanged(nameof(GiftTo));
-            RaisePropertyChanged(nameof(FromImage));
+            RaisePropertyChanged(nameof(Image));
         }
     }
 }
