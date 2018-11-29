@@ -5,7 +5,7 @@ namespace MisteryCore
 {
     public static class Cipherer
     {
-        private const int MagicNumber1 = 67;
+        private const int MagicNumber1 = 59;
         private const int MagicNumber2 = 61;
         private const int MagicNumber3 = 3;
         private const int MagicNumber4 = 7;
