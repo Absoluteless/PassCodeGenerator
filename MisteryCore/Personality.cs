@@ -9,11 +9,8 @@ namespace MisteryCore
         StefanMorozov,
         SashaMoskvicheva,
         RuslanShaimardanov,
-        LubaNovikova,
         LenaMelikhova,
         NastyaRozkina,
-        SashaKudashkin,
-        MashaNikolaeva,
-        VitaEsman
+        MashaGlinskaya
     }
 }
