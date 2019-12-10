@@ -30,9 +30,6 @@ namespace MisterySolver.Wrappers
 
         private void OnSolvedChanging(bool solved)
         {
-            if (_solved == solved)
-                return;
-
             _solved = solved;
             SolvedChanged?.Invoke();
         }
